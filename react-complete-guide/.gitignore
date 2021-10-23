@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 code/node_modules/cache
+code/package.json
+code/node_modules/
+code/package-lock.json
 
 # testing
 /coverage
@@ -23,3 +26,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 package.json
+.gitignore
