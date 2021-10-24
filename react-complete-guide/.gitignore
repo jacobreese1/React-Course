@@ -28,3 +28,5 @@ yarn-error.log*
 package.json
 .gitignore
 ../.eslintcache
+code/.eslintcache
+../.gitignore
