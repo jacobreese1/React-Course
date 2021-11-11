@@ -1,10 +1,9 @@
-import React from 'react';
-
+import Users from './components/Users';
 
 function App() {
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <Users />
     </div>
   );
 }
