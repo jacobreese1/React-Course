@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-import Tasks from './components/Tasks/Tasks';
-import NewTask from './components/NewTask/NewTask';
-import useHttp from './hooks/use-http';
+import Tasks from "./components/Tasks/Tasks";
+import NewTask from "./components/NewTask/NewTask";
+import useHttp from "./hooks/use-http";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -21,7 +21,9 @@ function App() {
     };
 
     fetchTasks(
-      { url: 'https://react-hooks-cd2da-default-rtdb.firebaseio.com/tasks.json' },
+      {
+        url: "https://react-hooks-cd2da-default-rtdb.firebaseio.com/tasks.json",
+      },
       transformTasks
     );
   }, [fetchTasks]);
