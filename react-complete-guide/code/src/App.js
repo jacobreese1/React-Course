@@ -2,6 +2,7 @@ import { Route } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import MainHeader from "./components/MainHeader";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <Route path="/products">
           <Products />
         </Route>
+        <Route path="/product-detail/:productId">
+          <ProductDetail />
+        </Route>
       </main>
     </div>
   );
@@ -23,3 +27,4 @@ export default App;
 
 //our-domain.com/welcome => Component A
 //our-domain.com/products => Component B
+//our-domain.com/product-detail/"anything" => Component C
