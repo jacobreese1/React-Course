@@ -22,20 +22,19 @@ let hobbies: string[];
 
 hobbies = ["Cooking", "Homebrewing", "Coding", "DnD"];
 
-let person: {
-  name: string;
-  age: number;
-};
+type Person = {
+    name: string;
+    age: number;
+  };
+
+let person: Person;
 
 person = {
   name: "Jacob",
   age: 26,
 };
 
-let people: {
-  name: string;
-  age: number;
-}[];
+let people: Person[];
 
 let course: string | number = "React - The Complete Guide";
 
