@@ -36,3 +36,7 @@ let people: {
   name: string;
   age: number;
 }[];
+
+let course: string | number = "React - The Complete Guide";
+
+course = 123456;
