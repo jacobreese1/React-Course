@@ -8,10 +8,14 @@ function App() {
     new Todo("Learn Typescript")
   ]; 
 
+  const addTodoHandler = (todoText: string) => {
+      
+   };
+
   return (
     <div>
+      <NewTodo onAddTodo={addTodoHandler} />
       <Todos items={todos} />
-      <NewTodo />
     </div>
   );
 }
